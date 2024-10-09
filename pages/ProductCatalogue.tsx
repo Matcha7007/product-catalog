@@ -1,9 +1,11 @@
-"use client";
-
-import { CustomFilter, SearchBar } from "@/components";
+import { CarCard, CustomFilter, SearchBar } from "@/components";
+import { fetchCars } from "@/utils";
 import React from "react";
 
-const ProductCatalogue = () => {
+export default async function ProductCatalogue() {
+	const allCars = await fetchCars();
+	const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
+
 	return (
 		<div className="mt-12 padding-x padding-y max-width" id="discover-catalog">
 			<div className="home__text-container">
@@ -18,8 +20,22 @@ const ProductCatalogue = () => {
 					<CustomFilter title="year" />
 				</div>
 			</div>
+			{!isDataEmpty ? (
+				<section>
+					<div className="home__cars-wrapper">
+						{allCars.map((car) => (
+							<CarCard car={car} />
+						))}
+					</div>
+				</section>
+			) : (
+				<div className="home__error-container">
+					<h2 className="text-black text-xl font-bold">
+						Yaah, gada data mobilnyaa
+					</h2>
+					<p>{allCars?.message}</p>
+				</div>
+			)}
 		</div>
 	);
-};
-
-export default ProductCatalogue;
+}
