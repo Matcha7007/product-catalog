@@ -1,5 +1,13 @@
-import Evermos from './Evermos';
+import Footer from './Footer';
+import Navbar from './Navbar';
+import SearchBar from './SearchBar';
+import CustomFilter from './CustomFilter';
+import SearchManufacturer from './SearchManufacturer';
 
 export {
-    Evermos
+    Footer,
+    Navbar,
+    CustomFilter,
+    SearchBar,
+    SearchManufacturer
 }
