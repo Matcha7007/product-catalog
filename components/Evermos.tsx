@@ -1,6 +1,6 @@
 "use client";
+import { CustomButton } from "@/elements";
 import Image from "next/image";
-import CustomButton from "./button/CustomButton";
 import React from "react";
 
 const Evermos = () => {
