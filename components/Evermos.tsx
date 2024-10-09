@@ -1,6 +1,7 @@
 "use client";
-import React from "react";
+import Image from "next/image";
 import CustomButton from "./button/CustomButton";
+import React from "react";
 
 const Evermos = () => {
 	const handleScroll = () => {};
@@ -19,7 +20,10 @@ const Evermos = () => {
 				/>
 			</div>
 			<div className="hero__image-container">
-				<div className="hero__image"></div>
+				<div className="hero__image">
+					<Image src="/hero.png" alt="hero" fill className="object-contain" />
+					<div className="hero__image-overlay" />
+				</div>
 			</div>
 		</div>
 	);
