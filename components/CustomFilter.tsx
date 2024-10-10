@@ -45,7 +45,7 @@ const CustomFilter = ({ title, options, setFilter }: CustomFilterProps) => {
 									value={opt}
 									className={({ active }) =>
 										`relative cursor-default select-none py-2 px-4 ${
-											active ? "bg-primary-blue text-white" : "text-gray-900"
+											active ? "bg-ever-green text-white" : "text-gray-900"
 										}`
 									}>
 									{({ selected }) => (

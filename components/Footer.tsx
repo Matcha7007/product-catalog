@@ -9,7 +9,7 @@ const Footer = () => {
 			<div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
 				<div className="flex flex-col justify-start items-start gap-6">
 					<Image
-						src="/logo.svg"
+						src="/logo.png"
 						alt="logo"
 						width={118}
 						height={18}
@@ -28,7 +28,7 @@ const Footer = () => {
 								<Link
 									key={item.title}
 									href={item.url}
-									className="text-gray-500">
+									className="text-gray-500 hover:text-ever-green">
 									{item.title}
 								</Link>
 							))}
@@ -40,10 +40,10 @@ const Footer = () => {
 			<div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10">
 				<p>@2024 ProductCatalog. All Rights Reserved</p>
 				<div className="footer__copyrights-link">
-					<Link href="/" className="text-gray-500">
+					<Link href="/" className="text-gray-500 hover:text-ever-green">
 						Privacy Policy
 					</Link>
-					<Link href="/" className="text-gray-500">
+					<Link href="/" className="text-gray-500 hover:text-ever-green">
 						Terms of Use
 					</Link>
 				</div>

@@ -15,13 +15,14 @@ const Evermos = () => {
 	return (
 		<div className="hero">
 			<div className="flex-1 pt-36 padding-x">
-				<h1 className="hero__title">
+				<h1 className="hero__title text-ever-green">
 					Cari yang kamu butuhin dengan mudah, semudah dia lupain kamu!
 				</h1>
 				<p className="hero__subtitle">Scroll - scroll aja ya di bawah ^,^</p>
 				<CustomButton
-					title="Explore Product"
-					containerStyles="bg-primary-blue text-white rounded-full mt-10"
+					title="Mulai Yuk.."
+					containerStyles="bg-ever-green text-white hover:bg-white hover:text-ever-green rounded-full mt-10"
+					textStyles="text-ever-yerrow"
 					handleClick={handleScroll}
 				/>
 			</div>

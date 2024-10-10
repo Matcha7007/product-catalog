@@ -16,7 +16,7 @@ const ShowMore = ({ pageNumber, isNext, setLimit }: ShowMoreProps) => {
 				<CustomButton
 					title="Tampilin Lainnya"
 					btnType="button"
-					containerStyles="bg-primary-blue rounded-full text-white"
+					containerStyles="bg-ever-green rounded-full text-white"
 					handleClick={handleNavigation}
 				/>
 			)}

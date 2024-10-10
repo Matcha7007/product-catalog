@@ -72,30 +72,15 @@ export const manufacturers = [
   
   export const footerLinks = [
     {
-      title: "About",
+      title: "Tentang Aku",
       links: [
-        { title: "How it works", url: "/" },
-        { title: "Featured", url: "/" },
-        { title: "Partnership", url: "/" },
-        { title: "Bussiness Relation", url: "/" },
+        { title: "LinkedIn", url: "https://www.linkedin.com/in/ilham-khusyairi-48510b1bb/" },
       ],
     },
     {
-      title: "Company",
+      title: "Source Code",
       links: [
-        { title: "Events", url: "/" },
-        { title: "Blog", url: "/" },
-        { title: "Podcast", url: "/" },
-        { title: "Invite a friend", url: "/" },
-      ],
-    },
-    {
-      title: "Socials",
-      links: [
-        { title: "Discord", url: "/" },
-        { title: "Instagram", url: "/" },
-        { title: "Twitter", url: "/" },
-        { title: "Facebook", url: "/" },
+        { title: "GitHub", url: "https://github.com/Matcha7007/product-catalog/tree/revisi" },
       ],
     },
   ];

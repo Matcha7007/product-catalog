@@ -12,6 +12,13 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
+        "ever-green": {
+          DEFAULT: "#00343B",
+          100: "#F5F8FF"
+        },
+        "ever-yellow": {
+          DEFAULT: "#FFD700"
+        },
         "black-100": "#2B2C35",
         "primary-blue": {
           DEFAULT: "#2B59FF",
