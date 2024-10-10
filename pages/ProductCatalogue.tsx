@@ -1,9 +1,17 @@
 import { CarCard, CustomFilter, SearchBar } from "@/components";
+import { HomeProps } from "@/types";
 import { fetchCars } from "@/utils";
 import React from "react";
 
-export default async function ProductCatalogue() {
-	const allCars = await fetchCars();
+export default async function ProductCatalogue({ searchParams }: HomeProps) {
+	const { manufacturer, year, model, fuel, limit } = searchParams;
+	const allCars = await fetchCars({
+		manufacturer: manufacturer || "",
+		year: year || 2022,
+		fuel: fuel || "",
+		limit: limit || 10,
+		model: model || "",
+	});
 	const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
 	return (
