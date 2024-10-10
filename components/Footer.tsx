@@ -28,7 +28,14 @@ const Footer = () => {
 								<Link
 									key={item.title}
 									href={item.url}
-									className="text-gray-500 hover:text-ever-green">
+									className="flex text-gray-500 hover:text-ever-green">
+									<Image
+										src={item.logo}
+										width={30}
+										height={30}
+										alt="Github Logo"
+										className="w-6 h-6 mr-2"
+									/>
 									{item.title}
 								</Link>
 							))}
