@@ -74,7 +74,7 @@ export default function ProductCatalogue() {
 					{loading && (
 						<div className="mt-16 w-full flex-center">
 							<Image
-								src="/loader.svg"
+								src="/product-catalog/loader.svg"
 								alt="loader"
 								width={50}
 								height={50}

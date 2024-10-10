@@ -34,7 +34,7 @@ const SearchManufacturer = ({
 				<div className="relative w-full">
 					<ComboboxButton className="absolute top-[14px]">
 						<Image
-							src="/car-logo.svg"
+							src="/product-catalog/car-logo.svg"
 							width={20}
 							height={20}
 							className="ml-4"

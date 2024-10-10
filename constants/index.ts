@@ -74,13 +74,13 @@ export const manufacturers = [
     {
       title: "Tentang Aku",
       links: [
-        { title: "LinkedIn", url: "https://www.linkedin.com/in/ilham-khusyairi-48510b1bb/", logo: "/linkedin.svg" },
+        { title: "LinkedIn", url: "https://www.linkedin.com/in/ilham-khusyairi-48510b1bb/", logo: "/product-catalog/linkedin.svg" },
       ],
     },
     {
       title: "Source Code",
       links: [
-        { title: "GitHub", url: "https://github.com/Matcha7007/product-catalog/tree/revisi", logo: "/github.svg" },
+        { title: "GitHub", url: "https://github.com/Matcha7007/product-catalog/tree/revisi", logo: "/product-catalog/github.svg" },
       ],
     },
   ];

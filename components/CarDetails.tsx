@@ -40,7 +40,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailProps) => (
 									className="absolute top-2 right-2 z-10 w-fit p-2 bg-ever-green-100 rounded-full"
 									onClick={closeModal}>
 									<Image
-										src="/close.svg"
+										src="/product-catalog/close.svg"
 										alt="close"
 										width={20}
 										height={20}
