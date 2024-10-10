@@ -17,9 +17,14 @@ export interface OptionProps {
 export interface CustomFilterProps {
     title: string;
     options: OptionProps[];
+    setFilter: (option: string) => void;
 }
 export interface SearchManufacturerProps {
-    manufacturer: string;
+    selected: string;
+    setSelected: (manufacturer: string) => void;
+}
+export interface SearchBarProps {
+    setModel: (model: string) => void;
     setManufacturer: (manufacturer: string) => void;
 }
 
@@ -63,4 +68,5 @@ export interface CarDetailProps {
 export interface ShowMoreProps {
     pageNumber: number;
     isNext: boolean;
+    setLimit: (limit: number) => void;
 }
