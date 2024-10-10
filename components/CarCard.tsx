@@ -2,14 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { CarProps } from "@/types";
+import { CarCardProps } from "@/types";
 import { calculateCarRent, generateCarImageUrl } from "@/utils";
 import { CustomButton } from "@/elements";
 import CarDetails from "./CarDetails";
-
-interface CarCardProps {
-	car: CarProps;
-}
 
 const CarCard = ({ car }: CarCardProps) => {
 	const { city_mpg, year, make, model, transmission, drive } = car;

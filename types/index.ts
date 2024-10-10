@@ -44,3 +44,13 @@ export interface FilterProps {
 export interface HomeProps {
     searchParams: FilterProps;
 }
+
+export interface CarCardProps {
+	car: CarProps;
+}
+
+export interface CarDetailProps {
+	isOpen: boolean;
+	closeModal: () => void;
+	car: CarProps;
+}

@@ -1,4 +1,4 @@
-import { CarProps } from "@/types";
+import { CarDetailProps } from "@/types";
 import {
 	Dialog,
 	DialogPanel,
@@ -8,12 +8,6 @@ import {
 import React, { Fragment } from "react";
 import Image from "next/image";
 import { generateCarImageUrl } from "@/utils";
-
-interface CarDetailProps {
-	isOpen: boolean;
-	closeModal: () => void;
-	car: CarProps;
-}
 
 const CarDetails = ({ isOpen, closeModal, car }: CarDetailProps) => (
 	<>
