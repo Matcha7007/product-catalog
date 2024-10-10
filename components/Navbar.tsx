@@ -17,8 +17,8 @@ const Navbar = () => {
 					/>
 				</Link>
 				<a
-					href="https://github.com/Matcha7007/product-catalog/tree/revisi"
-					className="flex justify-center items-center text-ever-green rounded-full bg-white min-w-[110px] min-h-[40px] hover:bg-ever-green hover:text-white">
+					href="https://github.com/Matcha7007/product-catalog/tree/batch-1"
+					className="flex justify-center items-center text-ever-green rounded-full bg-white min-w-[110px] min-h-[40px] hover:border-ever-green">
 					<Image
 						src="/github.svg"
 						width={30}

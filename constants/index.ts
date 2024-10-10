@@ -80,7 +80,7 @@ export const manufacturers = [
     {
       title: "Source Code",
       links: [
-        { title: "GitHub", url: "https://github.com/Matcha7007/product-catalog/tree/revisi", logo: "/github.svg" },
+        { title: "GitHub", url: "https://github.com/Matcha7007/product-catalog/tree/batch-1", logo: "/github.svg" },
       ],
     },
   ];
