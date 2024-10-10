@@ -4,7 +4,13 @@ import Image from "next/image";
 import React from "react";
 
 const Evermos = () => {
-	const handleScroll = () => {};
+	const handleScroll = () => {
+		const nextSection = document.getElementById("discover-catalog");
+
+		if (nextSection) {
+			nextSection.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 
 	return (
 		<div className="hero">
