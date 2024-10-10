@@ -28,6 +28,8 @@ const Footer = () => {
 								<Link
 									key={item.title}
 									href={item.url}
+									target="_blank"
+									rel="noopener noreferrer"
 									className="flex text-gray-500 hover:text-ever-green">
 									<Image
 										src={item.logo}

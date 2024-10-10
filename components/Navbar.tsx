@@ -18,6 +18,8 @@ const Navbar = () => {
 				</Link>
 				<a
 					href="https://github.com/Matcha7007/product-catalog/tree/batch-1"
+					target="_blank"
+					rel="noopener noreferrer"
 					className="flex justify-center items-center text-ever-green rounded-full bg-white min-w-[110px] min-h-[40px] hover:border-ever-green">
 					<Image
 						src="/product-catalog/github.svg"
