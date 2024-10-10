@@ -17,6 +17,8 @@ export default function ProductCatalogue() {
 	const [year, setYear] = useState(2022);
 	const [limit, setLimit] = useState(10);
 
+	const [error, setError] = useState("");
+
 	const getCars = async () => {
 		setLoading(true);
 		try {
@@ -30,6 +32,7 @@ export default function ProductCatalogue() {
 
 			setAllCars(result);
 		} catch (error) {
+			setError("Waah ada masalah saat ngambil data :)");
 			console.warn(error);
 		} finally {
 			setLoading(false);
@@ -90,7 +93,7 @@ export default function ProductCatalogue() {
 						<h2 className="text-black text-xl font-bold">
 							Yaah, gada data mobilnyaa
 						</h2>
-						<p>{allCars?.message}</p>
+						<p>{error}</p>
 					</div>
 				)
 			)}
